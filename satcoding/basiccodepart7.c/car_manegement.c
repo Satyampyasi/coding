@@ -49,10 +49,3 @@ int main(){
     else printf("no service for your vehicle");
     return 0;
 }
-/*   printf(" Enter your name  ");
-            scanf("%c\n",&ch);
-            printf("Enter bike name");
-            scanf("%c\n",&bk);
-            printf(" Name of owner %c\n",ch);
-            printf("Name of bike %c\n",bk);
-            */
