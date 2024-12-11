@@ -1,17 +1,37 @@
 #include<stdio.h>
 int main(){
-    int arr[6]={5,4,3,7,2,6};
-    int eve[100];
-    int odo[100];
-    for(int i=0;i<5;i++){
-        if(arr[i]%2==0){
-            eve[i]=arr[i];
-        }
-        else odo[i]=arr[i];
+    int n;
+   int eve[100];
+   int odd[100];
+   int  counteve=0;
+   int  countodd=0;
+    printf("enter tha no of array");
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+      printf("Enter tha element at index %d: ",i);
+      scanf("%d",&arr[i]);
     }
-      for(int i=1;i<6;i++){
-        printf("The Even array is [%d]",eve[i]);
-       
+    
+    for(int i=0;i<n;i++){
+        if(arr[i]%2==0){
+           eve[counteve]=arr[i];
+           counteve+=1;
+        }
+        else {
+          odd[countodd]=arr[i];
+          countodd+=1;
+          }
+    }
+      printf("This is even array:[");
+      for(int i=0;i<counteve;i++){
+         printf("%d ",eve[i]);
       }
+      printf("]");
+      printf("\nThis is odd array:[");
+      for(int i=0;i<countodd;i++){
+        printf("%d ",odd[i]);
+      }
+      printf("]");
       return 0;
 }
