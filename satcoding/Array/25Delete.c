@@ -12,11 +12,11 @@ int main(){
     scanf("%d",&arr[i]);
                         }
     printf("Enter tha element to delete");
-   scanf("%d",&Delete);
+    scanf("%d",&Delete);
         
-         int count=0;
+       int count=0;
        for(int i=0;i<n;i++) {
-         if(Delete!=arr[i]){
+       if(Delete!=arr[i]){
              arr[count]=arr[i];
              count+=1;
          }
